@@ -1,6 +1,6 @@
 {
   "friendly_name": "TN Chrome",
-  "image_src": "blob:https://tidenetworksllc.github.io/a3b22841-b2fc-421f-b50f-d77bed566842",
+  "image_src": "chromium.png",
   "description": "Google Chrome with added root certificates for trusted internal access",
   "cores": 2,
   "memory": 2768,
