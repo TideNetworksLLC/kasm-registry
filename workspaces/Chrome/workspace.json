@@ -1,0 +1,20 @@
+{
+  "friendly_name": "Chrome",
+  "image_src": "Chrome.png",
+  "description": "Google Chrome",
+  "cores": 2,
+  "memory": 2768,
+  "gpu_count": 0,
+  "cpu_allocation_method": "Inherit",
+  "docker_registry": "https://index.docker.io/v1/",
+  "categories": [
+    "Browser"
+  ],
+  "require_gpu": false,
+  "enabled": true,
+  "image_type": "Container",
+  "name": "ghcr.io/tidenetworksllc/kasm-chrome-custom:lates",
+  "architecture": [
+    "amd64"
+  ]
+}
