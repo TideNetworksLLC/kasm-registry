@@ -5,7 +5,7 @@ const nextConfig = {
     name: 'Tide Networks',
     description: 'Kasm workspaces.',
     icon: '/img/logo.svg',
-    listUrl: 'https://registry.kasmweb.com/',
+    listUrl: 'https://tidenetworksllc.github.io/kasm-registry/',
     contactUrl: 'https://TideNetworks.com',
   },
   reactStrictMode: true,
