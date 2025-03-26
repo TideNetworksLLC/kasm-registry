@@ -1,6 +1,6 @@
 {
   "description": "Google Chrome with custom root certificates.",
-  "docker_registry": "https://index.docker.io/v1/",
+  "docker_registry": "https://ghcr.io",
   "image_src": "Chrome.png",
   "run_config": {
     "hostname": "kasm"
