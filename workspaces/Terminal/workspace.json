@@ -1,0 +1,35 @@
+{
+  "description": "Terminal workspace with Ansible, Terraform, and developer tools.",
+  "docker_registry": "https://ghcr.io",
+  "image_src": "Terminal.png",
+  "run_config": {
+    "hostname": "terminal"
+  },
+  "exec_config": {
+    "go": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+    },
+    "assign": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+    }
+  },
+  "categories": [
+    "Utilities",
+    "DevOps",
+    "Terminal"
+  ],
+  "friendly_name": "Terminal",
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    {
+      "version": "1.16.x",
+      "image": "ghcr.io/tidenetworksllc/kasm-terminal-custom:latest",
+      "uncompressed_size_mb": 1850,
+      "available_tags": [
+        "latest"
+      ]
+    }
+  ]
+}
