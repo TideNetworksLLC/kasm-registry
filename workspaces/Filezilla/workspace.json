@@ -1,0 +1,34 @@
+{
+  "description": "FileZilla FTP/SFTP client with custom root certificates.",
+  "docker_registry": "https://ghcr.io",
+  "image_src": "FileZilla.png",
+  "run_config": {
+    "hostname": "filezilla"
+  },
+  "exec_config": {
+    "go": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+    },
+    "assign": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+    }
+  },
+  "categories": [
+    "Utilities",
+    "Networking"
+  ],
+  "friendly_name": "FileZilla",
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    {
+      "version": "1.16.x",
+      "image": "ghcr.io/tidenetworksllc/kasm-filezilla-custom:latest",
+      "uncompressed_size_mb": 1650,
+      "available_tags": [
+        "latest"
+      ]
+    }
+  ]
+}
