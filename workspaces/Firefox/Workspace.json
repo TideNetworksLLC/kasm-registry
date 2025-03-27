@@ -1,0 +1,33 @@
+{
+  "description": "Firefox with custom root certificates.",
+  "docker_registry": "https://ghcr.io",
+  "image_src": "Firefox.png",
+  "run_config": {
+    "hostname": "kasm"
+  },
+  "exec_config": {
+    "go": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+    },
+    "assign": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+    }
+  },
+  "categories": [
+    "Browser"
+  ],
+  "friendly_name": "Firefox",
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    {
+      "version": "1.16.x",
+      "image": "ghcr.io/tidenetworksllc/kasm-firefox-custom:latest",
+      "uncompressed_size_mb": 2170,
+      "available_tags": [
+        "latest"
+      ]
+    }
+  ]
+}
