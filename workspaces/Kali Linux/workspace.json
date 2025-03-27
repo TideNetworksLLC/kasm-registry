@@ -1,0 +1,35 @@
+{
+  "description": "Kali Rolling desktop environment with tools and custom root certificates.",
+  "docker_registry": "https://ghcr.io",
+  "image_src": "Kali.png",
+  "run_config": {
+    "hostname": "kali"
+  },
+  "exec_config": {
+    "go": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+    },
+    "assign": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+    }
+  },
+  "categories": [
+    "Security",
+    "Linux",
+    "DevOps"
+  ],
+  "friendly_name": "Kali Linux",
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    {
+      "version": "1.16.x",
+      "image": "ghcr.io/tidenetworksllc/kasm-kali-rolling-desktop:latest",
+      "uncompressed_size_mb": 2950,
+      "available_tags": [
+        "latest"
+      ]
+    }
+  ]
+}
