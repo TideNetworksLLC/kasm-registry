@@ -3,7 +3,7 @@
   "docker_registry": "https://ghcr.io",
   "image_src": "Chrome.png",
   "run_config": {
-    "hostname": "kasm"
+    "hostname": "chrome"
   },
   "exec_config": {
     "go": {
@@ -23,7 +23,7 @@
   "compatibility": [
     {
       "version": "1.16.x",
-      "image": "ghcr.io/tidenetworksllc/kasm-chrome-custom:latest",
+      "image": "ghcr.io/tidenetworksllc/kasm-custom-images/kasm-chrome-custom:latest",
       "uncompressed_size_mb": 2170,
       "available_tags": [
         "latest"
