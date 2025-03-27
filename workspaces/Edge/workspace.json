@@ -1,0 +1,34 @@
+{
+  "description": "Edge browser with custom root certificates",
+  "docker_registry": "https://ghcr.io",
+  "image_src": "Edge.png",
+  "run_config": {
+    "hostname": "edge"
+  },
+  "exec_config": {
+    "go": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+    },
+    "assign": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+    }
+  },
+  "categories": [
+    "Browser"
+  ],
+  "friendly_name": "Edge",
+  "architecture": [
+    "amd64",
+    "arm64"
+  ],
+  "compatibility": [
+    {
+      "version": "1.16.x",
+      "image": "ghcr.io/tidenetworksllc/kasm-edge-custom:latest",
+      "uncompressed_size_mb": 2170,
+      "available_tags": [
+        "latest"
+      ]
+    }
+  ]
+}
