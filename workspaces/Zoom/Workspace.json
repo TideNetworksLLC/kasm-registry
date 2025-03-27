@@ -1,0 +1,33 @@
+{
+  "description": "Zoom client with custom root certificates.",
+  "docker_registry": "https://ghcr.io",
+  "image_src": "Zoom.png",
+  "run_config": {
+    "hostname": "zoom"
+  },
+  "exec_config": {
+    "go": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+    },
+    "assign": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+    }
+  },
+  "categories": [
+    "Communication"
+  ],
+  "friendly_name": "Zoom",
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    {
+      "version": "1.16.x",
+      "image": "ghcr.io/tidenetworksllc/kasm-zoom-custom:latest",
+      "uncompressed_size_mb": 2170,
+      "available_tags": [
+        "latest"
+      ]
+    }
+  ]
+}
