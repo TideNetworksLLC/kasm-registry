@@ -27,7 +27,7 @@
       "image": "ghcr.io/tidenetworksllc/kasm-chromium-custom:latest",
       "uncompressed_size_mb": 2170,
       "available_tags": [
-        "develop"
+        "latest"
       ]
     }
   ]
