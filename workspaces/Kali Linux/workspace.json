@@ -24,7 +24,7 @@
   ],
   "compatibility": [
     {
-      "version": "1.16.x",
+      "version": "1.18.x",
       "image": "ghcr.io/tidenetworksllc/kasm-kali-rolling-desktop:latest",
       "uncompressed_size_mb": 2950,
       "available_tags": [
@@ -33,3 +33,4 @@
     }
   ]
 }
+
