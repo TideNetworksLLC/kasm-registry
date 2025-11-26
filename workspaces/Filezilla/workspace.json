@@ -23,7 +23,7 @@
   ],
   "compatibility": [
     {
-      "version": "1.16.x",
+      "version": "1.18.x",
       "image": "ghcr.io/tidenetworksllc/kasm-filezilla-custom:latest",
       "uncompressed_size_mb": 1650,
       "available_tags": [
@@ -32,3 +32,4 @@
     }
   ]
 }
+
