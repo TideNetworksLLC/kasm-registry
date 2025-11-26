@@ -22,7 +22,7 @@
   ],
   "compatibility": [
     {
-      "version": "1.16.x",
+      "version": "1.18.x",
       "image": "ghcr.io/tidenetworksllc/kasm-zoom-custom:latest",
       "uncompressed_size_mb": 2170,
       "available_tags": [
@@ -31,3 +31,4 @@
     }
   ]
 }
+
